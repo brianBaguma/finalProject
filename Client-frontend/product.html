@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-bg">
+
+      <a class="navbar-brand" href="#">
+        <img src="./logo.jpg" style="border-radius: 50%;" alt="" height="50" width="50">
+      </a>
+
+      <div class="navbar-welcome">
+        <div class="text-white">Welcome, <em id="username"></em></div>
+        <button class="btn btn-bg my-2 my-sm-0" id="logout" type="submit">Logout</button>
+      </div>
+
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="product-list">
+      <h2>Our Product List</h2>
+      <table class="table table-striped table-bordered">
+        <thead class="table-head">
+          <tr>
+            <th scope="col" class="text-center">Name</th>
+            <th scope="col" class="text-center">Price</th>
+            <th scope="col" class="text-center">Image</th>
+            <th scope="col" class="text-center">Stock</th>
+            <th scope="col" class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table__product-list">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="shopping-cart">
+      <h2>Your Shopping Cart</h2>
+      <div class="alert alert-warning" role="alert" id="noItem__shopping-cart">
+        There is no item in your shipping cart!
+      </div>
+      <div id="table__shopping-cart" class="hidden">
+        <table class="table table-striped table-bordered">
+          <thead class="table-head">
+            <tr>
+              <th scope="col" class="text-center">Name</th>
+              <th scope="col" class="text-center">Price</th>
+              <th scope="col" class="text-center">Total</th>
+              <th scope="col" class="text-center">Quantity</th>
+            </tr>
+          </thead>
+          <tbody class="table__shopping-cart-list">
+
+          </tbody>
+        </table>
+        <div class="text-right">
+          <button id="place-order" class="btn btn-bg">
+            Place order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/product.js"></script>
+
+</body>
+
+</html>
